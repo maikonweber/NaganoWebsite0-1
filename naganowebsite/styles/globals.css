@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root{
+  --primary-color: #1BD3EB;
+  --primary-color-hover: #19c3da;
+  --primary-color-active: #16a6b9;
+  --secondary-color: #1E5A7C;
+  --dark-color: #1E5A7C;
+  --white-color: #FFFFFF;
+}
