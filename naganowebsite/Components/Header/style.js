@@ -27,7 +27,7 @@ export const BoxTitle = styled.div`
         width:100%;
         max-width:1440px;
         display:flex;
-        align-items:center;
+        padding-top: 100px;
 `
 
 export const Title = styled.h1`
