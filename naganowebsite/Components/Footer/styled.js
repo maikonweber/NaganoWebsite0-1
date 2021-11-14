@@ -43,7 +43,7 @@ export const ItemList = styled.li`
     display: flex;
     align-items: center;
     gap: 10px;
-    color:var(--primary-color);
+    color:var(--white-color);
     img{
         width:27px;
     }

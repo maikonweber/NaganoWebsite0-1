@@ -23,7 +23,7 @@ export const Left = styled.div`
         width: 100%;
         max-width: 1440px;
         height: 100%;
-        order: ${p=> {console.log(p.order === "normal"); return p.order === "normal"  ? 1 : 2}};
+        order: ${p=> { return p.order === "normal"  ? 1 : 2}};
         
 `
 export const Title = styled.h2`
