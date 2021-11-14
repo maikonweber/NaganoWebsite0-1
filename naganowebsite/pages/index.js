@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Topbar from '../Components/Topbar'
-import Header from '../Components/Header'
-import Card from '../Components/Card'
+import Topbar from '../src/Components/Topbar'
+import Header from '../src/Components/Header'
+import Card from '../src/Components/Card'
 import { HomeContainer,BoxCard } from '../styles/homeStyle'
-import SectionText from '../Components/SectionText'
-import Footer from '../Components/Footer'
+import SectionText from '../src/Components/SectionText'
+import Footer from '../src/Components/Footer'
+import Team from '../src/Components/Team'
 export default function Home() {
   return (
     <HomeContainer >
@@ -35,6 +36,8 @@ export default function Home() {
         image="/01-image.png"
         order="reverse"
       />
+
+      <Team img="/people.png"/>
     
       <Footer/>
     </HomeContainer>
