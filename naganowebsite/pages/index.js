@@ -5,6 +5,7 @@ import Header from '../Components/Header'
 import Card from '../Components/Card'
 import { HomeContainer,BoxCard } from '../styles/homeStyle'
 import SectionText from '../Components/SectionText'
+import Footer from '../Components/Footer'
 export default function Home() {
   return (
     <HomeContainer >
@@ -35,6 +36,7 @@ export default function Home() {
         order="reverse"
       />
     
+      <Footer/>
     </HomeContainer>
   )
 }
