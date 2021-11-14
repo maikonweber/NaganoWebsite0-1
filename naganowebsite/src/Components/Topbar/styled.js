@@ -5,7 +5,9 @@ export const Container = styled.div`
     width:100%;
     display:flex;
     justify-content:center;
-    
+    position: fixed;
+    z-index: 22;
+    top: 0;
 `
 
 export const Nav = styled.nav`

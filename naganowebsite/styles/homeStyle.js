@@ -4,6 +4,7 @@ export const HomeContainer = styled.div`
         min-height: 100vh;
         flex: 1;
         background-color: var(--dark-color);
+        padding-top: 140px;
 `
 
 export const BoxCard = styled.div`

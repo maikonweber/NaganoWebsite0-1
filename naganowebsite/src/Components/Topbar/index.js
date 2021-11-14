@@ -2,7 +2,7 @@ import Link from "next/link"
 import {Container,Nav,Cont,ContLink,Text,Button} from "./styled"
 function Topbar() {
     return (
-        <Container >
+        <Container  id="navbar">
             <Nav>
                 <Link href="/"><img src="/logo.svg" alt="Logo Nagano consultoria." /></Link>
                 <Cont >
