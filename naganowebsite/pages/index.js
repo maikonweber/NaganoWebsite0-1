@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { Button, ButtonGroup } from "@chakra-ui/react"
 import Topbar from '../Components/Topbar'
+import Header from '../Components/Header'
+import { Box } from '@chakra-ui/layout'
 export default function Home() {
   return (
-    <div >
+    <div className={styles.main} >
       <Head>
         <title>Nagano Consultoria</title>
         <meta name="description" content="Web site for Nagano Consultoria" />
@@ -13,8 +13,10 @@ export default function Home() {
       </Head>
 
       <Topbar/>
+      <Header/>
+      <Box > 
 
-     
+      </Box>
 
     
     </div>

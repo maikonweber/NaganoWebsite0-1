@@ -2,7 +2,7 @@ import { Box, Image, Flex, Button, Text } from "@chakra-ui/react"
 import Link from "next/link"
 function Topbar() {
     return (
-        <Box bg="var(--secondary-color)" w="100%" display="flex" justifyContent="center">
+        <Box bg="var(--dark-color)" w="100%" display="flex" justifyContent="center">
             <Box  w="100%" maxW="1440px" h="120px" p={4} color="white" display="flex">
                 <Image src="/logo.svg" alt="Logo Nagano consultoria." />
                 <Flex color="white" w="100%">
