@@ -12,6 +12,7 @@ export const BoxCard = styled.div`
         margin: 0 auto;
         width: 100%;
         max-width: 1440px;
+        height: 350px;
         justify-content: space-between;
         position: relative;
         top: -230px;
