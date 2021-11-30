@@ -1,5 +1,34 @@
 import next from "next";
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import Header from "../src/components/Topbar";
+
+// styled formulario
+const Formulario = styled.form`
+    body {
+        background-color: blue;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+    }   
+`;
+
+
 
 export default function proposta() {
   const [proposta, setProposta] = useState([]);
@@ -246,6 +275,9 @@ export default function proposta() {
     }
 
     return (
+        <>
+        <Header></Header>
+        <Formulario>
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
@@ -278,10 +310,7 @@ export default function proposta() {
                             <label>Cliente</label>
 
                             <select className="form-control" value={propostaClienteId} onChange={e => setPropostaClienteId(e.target.value)}>
-                                <option value="">Selecione</option>
-                             
-        
-                
+                                <option value="">Selecione</option>        
                             </select>
                         </div>
                         <div className="form-group">
@@ -321,6 +350,8 @@ export default function proposta() {
                 </div>
             </div>
         </div>
+        </Formulario>
+        </>
     );
 
 } 
