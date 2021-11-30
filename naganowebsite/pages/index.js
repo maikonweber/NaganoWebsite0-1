@@ -12,16 +12,17 @@ export default function Home() {
     <HomeContainer >
       <Head>
         <title>Nagano Consultoria</title>
-        <meta name="description" content="Web site for Nagano Consultoria" />
+        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
+        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Topbar/>
       <Header/>
       <BoxCard > 
-          <Card img="/financa.png" title="Finanças" text="Estudamos e pesquisamos as melhores opções de investimentos e soluções financeiras, adequadas aos objetivos e momento de vida."/>
-          <Card img="/chart.png" title="Crescimento Financeiro" text="Estudamos e pesquisamos as melhores opções de investimentos e soluções financeiras, adequadas aos objetivos e momento de vida." />
-          <Card img="/money.png" title="Economia" text="Estudamos e pesquisamos as melhores opções de investimentos e soluções financeiras, adequadas aos objetivos e momento de vida." />
+          <Card img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
+          <Card img="/chart.png" title="Credito Imobilário" text="Realizamos o seu sonho credito e soluções financeiras fornecidas pela caixa, adequadas aos objetivos e momento de vida." />
+          <Card img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
       </BoxCard>
 
       <SectionText 
