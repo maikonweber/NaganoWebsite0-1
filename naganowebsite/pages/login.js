@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import Topbar from "../src/components/Topbar";
-
+import { AuthContext } from "../src/context/AuthContext";
+ ''
 // Sing in form with styled components
 
-     handleSubmit = (e) => {
+     handleSubmit =  async (e)  => {
          e.preventDefault();
             this.props.form.validateFields((err, values) => {
                 if (!err) {
                     console.log('Received values of form: ', values);
                 }
+                await login(values.email, values.password);
             });
         }
 
 const Login = () => {
+    const { login } = useContext(AuthContext);
     return (
         <>
         <Topbar></Topbar>
