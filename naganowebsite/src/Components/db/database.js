@@ -35,9 +35,28 @@ async function insertLeads(nome, sobrenome, telefone, link, valor, produto, emai
 }
 }
 
+async function  isUser(email, password) {
+  const client = await pool.connect()
+  let string = `SELECT * FROM users WHERE email = $1 AND password = $2`
+  try {
+    const result = await client.query(string, [email, password])
+    return result.rows
+  }
+  catch (err) {
+    console.log(err)
+  }
 
+  if (result.rows.length > 0) {
+    return true
+  }
+  else {
+    return false
+  }  
+}
+  
 module.exports = {
   getAll,
-  insertLeads
+  insertLeads,
+  isUser
 
 }
