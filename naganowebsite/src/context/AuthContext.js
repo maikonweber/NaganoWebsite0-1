@@ -1,11 +1,11 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState, useContext} from 'react';
 import { signinRequest } from '../services/auth';
 import {setCookie} from 'nookies';
 import Router from 'next/router';
 
 export const AuthContext = createContext({});
 
-export function AuthProvider(props) {
+export function AuthProvider({ children }) {
     const isAuthenticated = !!user;
     useEffect(() => {
         if (isAuthenticated) {
@@ -28,7 +28,7 @@ export function AuthProvider(props) {
 
     return (
         <AuthContext.Provider value={user ,isAuthenticated, login}>
-            {props.children}
+            {children}
         </AuthContext.Provider>
     );
 }
